@@ -11,9 +11,6 @@
       if (window.console && window.console.log) window.console.log(message);
     };
 
-    // Flash fallback logging - don't include this in production
-    WEB_SOCKET_DEBUG = true;
-
     var pusher = new Pusher('14c7b82542a9bb659f62');
     var channel = pusher.subscribe('test_channel');
     channel.bind('my_event', function(data) {
