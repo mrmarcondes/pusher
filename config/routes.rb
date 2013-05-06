@@ -3,8 +3,8 @@ Pusher::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root to: 'charts#index'
-  get "charts/chart/:message" => "charts#chart"
+  root to: 'chats#index'
+  post "chats/chat" => "chats#do_chat"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
